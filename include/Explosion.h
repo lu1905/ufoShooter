@@ -1,5 +1,5 @@
 /*
-*	The class to represent a single explosion using particle system
+*   The class to represent a single explosion using particle system
 */
 
 #ifndef __EXPLOSION__
@@ -11,23 +11,23 @@
 
 typedef struct Particle
 {
-	float posX, posY, posZ;
-	float speedX, speedY, speedZ;
-	
+    float posX, posY, posZ;
+    float speedX, speedY, speedZ;
+    
 } Particle;
 
 class Explosion
 {
-	public:
-		static const int SIZE = 120;
-		int time;
-		Particle * particles;
+    public:
+        static const int SIZE = 120;
+        int time;
+        Particle * particles;
 
-		Explosion(float x, float y, float z);
-		~Explosion(){};
-		int size();
-		void cleanup();
-		void evolve();
+        Explosion(float x, float y, float z);
+        ~Explosion(){};
+        int size();
+        void cleanup();
+        void evolve();
 };
 
 #endif

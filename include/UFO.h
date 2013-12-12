@@ -1,5 +1,5 @@
 /*
-*	The class to represent a single UFO
+*   The class to represent a single UFO
 */
 
 #ifndef __UFO__
@@ -15,18 +15,18 @@ using namespace std;
 
 class UFO
 {
-	public:
-		float posX,posY,posZ;
-		int hp;
-		int shoot_counter;
-		int shoot_interval;
-		bool getHit;
-		
-		UFO(float x, float y, float z, int h, int interval);
-		~UFO(){};
+    public:
+        float posX,posY,posZ;
+        int hp;
+        int shoot_counter;
+        int shoot_interval;
+        bool getHit;
+        
+        UFO(float x, float y, float z, int h, int interval);
+        ~UFO(){};
 
-		void move();
-		void shoot(float x, float y, float z, vector<Bullet> * bs);
+        void move();
+        void shoot(float x, float y, float z, vector<Bullet> * bs);
 };
 
 #endif
